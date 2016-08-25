@@ -34,4 +34,10 @@ Shaun's email: To come?
 
 <h3>Policies, etc </h3>
 
+<b>Attendance: </b>At BMCC, the maximum number of absences is limited to one more hour than the number of hours a class meets in one week. For example, you may be enrolled in a four-hour class. In that class, you would be allowed 5 hours of absence (not 5 days). In the case of excessive absences, the instructor has the option to lower the grade or assign an F or WU grade.
+</br>
+
+
+
+
 
