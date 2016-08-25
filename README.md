@@ -94,7 +94,7 @@ Week 12:
 
 Week 13:
 
-Week 14: 
+Week 14: Review and final projects workshop
 
 Week 15: Final project presentations
 
