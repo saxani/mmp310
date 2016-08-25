@@ -82,9 +82,9 @@ Week 6: JavaScript: loops and time
 
 Week 7: JQuery
 
-Week 8: Midterm Project Presentations
+Week 8: JavaScript Objects and JSON
 
-Week 9: 
+Week 9: Midterm Project Presentations
 
 Week 10:
 
@@ -96,5 +96,5 @@ Week 13:
 
 Week 14: 
 
-Week 15:
+Week 15: Final project presentations
 
