@@ -1,4 +1,4 @@
-# mmp310
+# MMP310: Intermedia Programming II
 Syllabus, Class notes and assignments for MMP310 at BMCC
 
 Fall 2016
