@@ -68,33 +68,33 @@ Computers are available for student usage in the locations listed on http://www.
 For MMP and MMA tutoring, please visit BMCC's <a href="http://www.bmcc.cuny.edu/lrc/schedule.jsp" target="_blank">tutoring schedule</a>.
 
 <h2>Weekly Schedule</h2>
-Week 1: Syllabus and HTML/CSS review
+Week 1 (August 29th): Syllabus and HTML/CSS review
 
-Week 2: Basic JavaScript review and intro to Git/Github
+Week 2 (September 12th): Basic JavaScript review and intro to Git/Github
 
-Week 3: JavaScript: datatypes, math, random, and arrays
+Week 3 (September 19th): JavaScript: datatypes, math, random, and arrays
 
-Week 4: JavaScript: logic and functions
+Week 4 (September 26th): JavaScript: logic and functions
 
-Week 5: DOM and JavaScript events
+Week 5 (Thursday, October 6th): DOM and JavaScript events
 
-Week 6: JavaScript: loops and time
+Week 6 (October 17th): JavaScript: loops and time
 
-Week 7: JQuery
+Week 7 (October 24th): JQuery
 
-Week 8: JavaScript Objects and JSON
+Week 8 (October 31st): JavaScript Objects and JSON
 
-Week 9: Midterm Project Presentations, more JSON, APIs
+Week 9 (November 7th): Midterm Project Presentations, more JSON, APIs
 
-Week 10: JavaScript APIs and JSON
+Week 10 (November 14th): JavaScript APIs and JSON
 
-Week 11: Websockets
+Week 11 (November 21st): Websockets
 
-Week 12: D3 and P5.js
+Week 12 (November 28th): D3 and P5.js
 
-Week 13: D3 and P5.js
+Week 13 (December 5th): D3 and P5.js
 
-Week 14: Review and final projects workshop
+Week 14 (December 12th): Review and final projects workshop
 
-Week 15: Final project presentations
+Week 15 (December 19th): Final project presentations
 
