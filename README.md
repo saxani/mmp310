@@ -84,15 +84,15 @@ Week 7: JQuery
 
 Week 8: JavaScript Objects and JSON
 
-Week 9: Midterm Project Presentations
+Week 9: Midterm Project Presentations, more JSON, APIs
 
-Week 10:
+Week 10: JavaScript APIs and JSON
 
-Week 11:
+Week 11: Websockets
 
-Week 12: 
+Week 12: D3 and P5.js
 
-Week 13:
+Week 13: D3 and P5.js
 
 Week 14: Review and final projects workshop
 
