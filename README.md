@@ -72,17 +72,17 @@ Week 1: Syllabus and HTML/CSS review
 
 Week 2: Basic JavaScript review and intro to Git/Github
 
-Week 3: JS datatypes, math, random, and arrays
+Week 3: JavaScript: datatypes, math, random, and arrays
 
-Week 4: JS logic and functions
+Week 4: JavaScript: logic and functions
 
-Week 5: DOM and JS events
+Week 5: DOM and JavaScript events
 
-Week 6: JS loops and JS time
+Week 6: JavaScript: loops and time
 
 Week 7: JQuery
 
-Week 8:
+Week 8: Midterm Project Presentations
 
 Week 9: 
 
