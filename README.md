@@ -48,4 +48,24 @@ Shaun's email: To come?
 Assignments will be posted on GitHub with URLs submitted via Blackboard. Grades and comments will be posted on Blackboard. 5% will be deducted per late assignment per day. 
 <br/>
 
+<h3>Software</h3>
+
+Text Editors: <a href="https://www.sublimetext.com/">Sublime</a> or <a href="http://brackets.io/">Brackets</a>
+Browser: Chrome 
+GitHub
+<br/>
+
+<h3>Resources</h3>
+
+Tutorials and readings will be posted on weekly class notes. There is no official textbook for this class. Students interested in text book resources should consider <a href="http://www.htmlandcssbook.com/">this HTML & CSS book</a> and <a href="http://www.htmlandcssbook.com/">this JavaScript and JQuery</a> book. 
+
+<br/>
+
+Computer Labs
+
+Computers are available for student usage in the locations listed on http://www.bmcc.cuny.edu/it
+
+Tutoring
+
+For MMP and MMA tutoring, please visit BMCC's tutoring schedule.
 
