@@ -50,14 +50,14 @@ Assignments will be posted on GitHub with URLs submitted via Blackboard. Grades 
 
 <h3>Software</h3>
 
-Text Editors: <a href="https://www.sublimetext.com/">Sublime</a> or <a href="http://brackets.io/">Brackets</a>
+Text Editors: <a href="https://www.sublimetext.com/" target="_blank">Sublime</a> or <a href="http://brackets.io/" target="_blank">Brackets</a>
 Browser: Chrome 
 GitHub
 <br/>
 
 <h3>Resources</h3>
 
-Tutorials and readings will be posted on weekly class notes. There is no official textbook for this class. Students interested in text book resources should consider <a href="http://www.htmlandcssbook.com/">this HTML & CSS book</a> and <a href="http://www.htmlandcssbook.com/">this JavaScript and JQuery</a> book. 
+Tutorials and readings will be posted on weekly class notes. There is no official textbook for this class. Students interested in text book resources should consider <a href="http://www.htmlandcssbook.com/" target="_blank">this HTML & CSS book</a> and <a href="http://www.htmlandcssbook.com/" target="_blank">this JavaScript and JQuery</a> book. 
 
 <br/>
 
@@ -67,5 +67,5 @@ Computers are available for student usage in the locations listed on http://www.
 
 Tutoring
 
-For MMP and MMA tutoring, please visit BMCC's tutoring schedule.
+For MMP and MMA tutoring, please visit BMCC's <a href="http://www.bmcc.cuny.edu/lrc/schedule.jsp" target="_blank">tutoring schedule</a>.
 
