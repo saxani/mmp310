@@ -37,7 +37,13 @@ Shaun's email: To come?
 <b>Attendance: </b>At BMCC, the maximum number of absences is limited to one more hour than the number of hours a class meets in one week. For example, you may be enrolled in a four-hour class. In that class, you would be allowed 5 hours of absence (not 5 days). In the case of excessive absences, the instructor has the option to lower the grade or assign an F or WU grade.
 </br>
 
-
+<b>Evaluation: </b>Students are evaluated on completetion and quality of assignments, homework assignments, class participation and attendance. Points will be deducted for late assignments and homework. <br/>
+<ul>
+  <li>Participation and Attendance - 15%</li>
+  <li>Weekly homework assignments - 30%</li>
+  <li>Midterm Project - 20%</li>
+  <li>Final Project - 35%</li>
+</ul>
 
 
 
