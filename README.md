@@ -45,7 +45,6 @@ Shaun's email: To come?
   <li>Final Project - 35%</li>
 </ul>
 
-<br/>
 Assignments will be posted on GitHub with URLs submitted via Blackboard. Grades and comments will be posted on Blackboard. 5% will be deducted per late assignment per day. 
 <br/>
 
