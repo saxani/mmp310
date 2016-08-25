@@ -70,19 +70,17 @@ For MMP and MMA tutoring, please visit BMCC's <a href="http://www.bmcc.cuny.edu/
 <h2>Weekly Schedule</h2>
 Week 1: Syllabus and HTML/CSS review
 
-Week 2:
+Week 2: Basic JavaScript review and intro to Git/Github
 
-Week 3: 
+Week 3: JS datatypes, math, random, and arrays
 
-Week 2:
+Week 4: JS logic and functions
 
-Week 4: 
+Week 5: DOM and JS events
 
-Week 5:
+Week 6: JS loops and JS time
 
-Week 6:
-
-Week 7: 
+Week 7: JQuery
 
 Week 8:
 
