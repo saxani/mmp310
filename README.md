@@ -27,8 +27,8 @@ By the end of the course, students should have a firm grasp on: <br/>
 </ul>
 
 <br/>
-Course Information: https://github.com/saxani/mmp310/
-Course Communication: https://mmp310bmcc.slack.com/
+Course Information: https://github.com/saxani/mmp310/ <br/>
+Course Communication: https://mmp310bmcc.slack.com/ <br/>
 Shaun's email: To come?
 <br/>
 
