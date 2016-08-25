@@ -10,7 +10,7 @@ Instructor Shaun Axani <br/>
 Email: TBA <br/>
 Office Hours: By appointment <br/>
 
-<h2> Course Description </h2>
+<h3> Course Description </h3>
 Credits: 3 <br/>
 This course builds on MMP100 and MMP210 to introduce more advanced concepts, primarily in JavaScript and Jquery. Students will learn fundamentals of web-based programming to utilize media elements and text for the web. <br/>
 
@@ -25,4 +25,13 @@ By the end of the course, students should have a firm grasp on: <br/>
 <li>Real time communication in the browser with web sockets</li>
 <li>Develop critical skills around user Interaction and user experience </li>
 </ul>
+
+<br/>
+Course Information: https://github.com/saxani/mmp310/
+Course Communication: https://mmp310bmcc.slack.com/
+Shaun's email: To come?
+<br/>
+
+<h3>Policies, etc </h3>
+
 
