@@ -6,7 +6,7 @@ Fall 2016 <br/>
 Monday 1:30pm - 5:10pm <br/>
 Fiterman 1006 <br/> 
 
-Instructor Shaun Axani <br/>
+Instructor: Shaun Axani <br/>
 Email: TBA <br/>
 Office Hours: By appointment <br/>
 
