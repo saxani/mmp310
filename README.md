@@ -59,13 +59,44 @@ GitHub
 
 Tutorials and readings will be posted on weekly class notes. There is no official textbook for this class. Students interested in text book resources should consider <a href="http://www.htmlandcssbook.com/" target="_blank">this HTML & CSS book</a> and <a href="http://www.htmlandcssbook.com/" target="_blank">this JavaScript and JQuery</a> book. 
 
-<br/>
-
-Computer Labs
+<h3>Computer Labs</h3>
 
 Computers are available for student usage in the locations listed on http://www.bmcc.cuny.edu/it
 
-Tutoring
+<h3>Tutoring</h3>
 
 For MMP and MMA tutoring, please visit BMCC's <a href="http://www.bmcc.cuny.edu/lrc/schedule.jsp" target="_blank">tutoring schedule</a>.
+
+<h2>Weekly Schedule</h2>
+Week 1: Syllabus and HTML/CSS review
+
+Week 2:
+
+Week 3: 
+
+Week 2:
+
+Week 4: 
+
+Week 5:
+
+Week 6:
+
+Week 7: 
+
+Week 8:
+
+Week 9: 
+
+Week 10:
+
+Week 11:
+
+Week 12: 
+
+Week 13:
+
+Week 14: 
+
+Week 15:
 
