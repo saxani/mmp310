@@ -72,9 +72,9 @@ For MMP and MMA tutoring, please visit BMCC's <a href="http://www.bmcc.cuny.edu/
 <h2>Weekly Schedule</h2>
 Week 1 (August 29th): Syllabus and HTML/CSS review
 <ul>
-<li><a href="https://github.com/saxani/CG-314/tree/master/Week%201">In-class exercise</a></li>
-<li>HTML & CSS</li>
-<li>Homework assignment: <a href="https://github.com/saxani/CG-314/tree/master/Week%201">Create a web page</a></li>
+<li><a href="https://github.com/saxani/mmp310/tree/master/Week%201">In-class exercise</a></li>
+<li><a href="https://docs.google.com/presentation/d/1nzqk6-i4EYoavxRnHHQqLUZv6hMBsCahqatzl1WTp4k/edit?usp=sharing">HTML & CSS</a></li>
+<li>Homework assignment: <a href="https://github.com/saxani/mmp310/tree/master/Week%201">Create a web page</a></li>
 
 Week 2 (September 12th): Basic JavaScript review and intro to Git/Github
 
