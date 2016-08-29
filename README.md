@@ -54,8 +54,8 @@ Assignments will be posted on GitHub with URLs submitted via Blackboard. Grades 
 
 <h3>Software</h3>
 
-Text Editors: <a href="https://www.sublimetext.com/" target="_blank">Sublime</a> or <a href="http://brackets.io/" target="_blank">Brackets</a>
-Browser: Chrome 
+Text Editors: <a href="https://www.sublimetext.com/" target="_blank">Sublime</a> or <a href="http://brackets.io/" target="_blank">Brackets</a> <br />
+Browser: Chrome <br />
 GitHub
 <br/>
 
