@@ -20,3 +20,12 @@ The site should have:
 
 Also, find a website you like. Write two paragraphs about it. What do you like about it? What could be better? Describe it in terms of it's HTML and CSS layout. Be specific!
 
+<h2>Get Digital Ocean!</h2>
+<ul>
+<li>Go to <a href="https://education.github.com/pack/">Github Education Pack</a></li>
+<li>Press to 'Get Your Pack'</li>
+<li>Scroll down to Digital Ocean and get your code</li>
+<li>Copy that code and proceed to Digital Ocean to follow signup procedures</li>
+
+
+
