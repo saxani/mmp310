@@ -77,6 +77,7 @@ Week 1 (August 29th): Syllabus and HTML/CSS review
 <li><a href="https://github.com/saxani/mmp310/tree/master/Week%201">In-class exercise</a></li>
 <li><a href="https://docs.google.com/presentation/d/1nzqk6-i4EYoavxRnHHQqLUZv6hMBsCahqatzl1WTp4k/edit?usp=sharing">HTML & CSS</a></li>
 <li><a href="http://alistapart.com/article/css-positioning-101">CSS Positioning 101</a></li>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Transitions/Using_CSS_transitions">CSS Transitions</a></li>
 <li>Homework assignment: <a href="https://github.com/saxani/mmp310/tree/master/Week%201">Create a web page</a></li>
 </ul>
 
