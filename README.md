@@ -48,6 +48,8 @@ Shaun's email: To come?
 Assignments will be posted on GitHub with URLs submitted via Blackboard. Grades and comments will be posted on Blackboard. 5% will be deducted per late assignment per day. 
 <br/>
 
+<b>Homework assignments</b> are to be handed in by midnight on the night before class (so, 12:00am Monday). <br/>
+
 <b>Computer/Classroom etiquette:</b> Students are expected to refrain from using the computer during class presentations and discussions. Students will need to be working using a computer, but <a href="https://medium.com/@cshirky/why-i-just-asked-my-students-to-put-their-laptops-away-7f5f7c50f368#.sxywlun1f">this is worth a read</a>.
 
 <h3>Software</h3>
