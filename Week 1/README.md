@@ -16,5 +16,7 @@ The site should have:
 <li>Menu</li>
 <li>Images, sounds, or videos</li>
 <li>Dynamic web component via CSS of JS</li>
-<li>Upload to your GitHub page and post link to Slack</li>
+<li>Upload to your GitHub page and post link to Slack</li> <br/>
+
+Also, find a website you like. Write two paragraphs about it. What do you like about it? What could be better? Describe it in terms of it's HTML and CSS layout. Be specific!
 
