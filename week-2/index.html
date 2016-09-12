@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Intro to JavaScript</title>
+    <link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+   <div id="container">
+    <h1>Intro to JavaScript</h1>
+    <hr>
+    
+    <p>JavaScript is a scripting language, and is optimal for creating dynamic content on the web. It has nothing to do with the other programming language Java, but it was named after it to jump on the 'Java' hype. It was originally called LiveScript.</p>
+    
+    <p>Think of a programming language like a recipe book or a manual. A computer doesn't interpret instructions the same way we do, so we need to be very clear about how we're describing them. When we're programming, we need to understand what our ultimate goal is, and break it down into small little parts that the computer will understand.</p>
+    
+    <p>Comptuters create models of the world using data. Those models include many objects. In object-oriented programming, objects can be repeated over and over and consist of: </p>
+    <ul>
+        <li>Properties</li>
+        <li>Events</li>
+        <li>Methods</li>
+    </ul>
+    
+    <p>Really utilizing object oriented programming comes later, but it's worth understanding how a computer thinks of everything.</p>
+    
+    <hr>
+    <h2>Let's start learning some JavaScript programming</h2>
+    
+    <p>We'll start with learning about the console. In Chrome, that will be in <i>View -> Developer -> JavaScript Console</i>.<br /> </p>
+    
+    <p>The shortcut is <i>CMD + OPTION+ J.</i> </p>
+    
+    <p>Essentially we've overriding our browser and we can code how we want now. It's only temporary, and when we refresh the browser it disappears. Let's start with a very important function that we're going to use constantly to debug our work, called the console.log().</p>
+    
+    <p>Start by typing:</p>
+    
+    <pre>
+    console.log("Hello world!");
+    </pre>
+    
+    <p>It's not much, but everytime you get stuck with your work, you'll want to console.log a variable or function to figure out what's gone wrong.</p>
+    
+    <p>Also note the ';' at the end of the line of code. This is standard practice in coding. It's signifying 'end of statement'. It's actually usually not necessary in JavaScript, but there can be errors and it can get confused without it, so it's good practice.</p>
+    
+    <p>Now we'll make changes to the document. This is getting into the Document Object Model which is how we access the content and style of the page. We'll learn more about that later. For now type each of these lines in the console and press enter in between:</p>
+    
+    <pre>
+    document;
+    document.body;
+    document.body.style;
+    document.body.style.color = "pink";
+    </pre>
+    
+    <p>What we did there was go into the webpage's style and change the color of the font. We can also just re-write the entire page if desired:</p>
+    
+    <pre>
+    document.write("New website!");    
+    </pre>
+    
+    <p id="aParagraph">Rather than dynamically changing a full website, it's more likely to modify some HTML. This paragraph has the ID of "aParagraph".</p>
+    
+    <pre>
+    var theWords = document.getElementById("aParagraph");
+    theWords.innerHTML = "New Words";    
+    </pre>
+    
+    <p>This gives you an idea of what's possible with JavaScript. Anything that's been labeled by our HTML or CSS can be accessed and altered by JavaScript</p>
+    
+    <p><i>var</i> is short for 'variable' in JavaScript. Variables are used to hold information which can change. In other programming languages, you need to specify if it's a number, or a word, a boolean statement. JavaScript doesn't really care. But be careful not to get confused.</p>
+    
+    <p>And with all other programming languages, we can do some math as well.</p>
+    
+    <pre>
+    var x;      //Name the variable
+    x = 10;     //Assign it a value
+    typeof x;   //A function to see type of a variable
+    x = x + 5;
+    x++;        //Handy shortcut to say x equals x plus one
+    x;          //The ++ isn't stated immediately
+    x = "A number";    //Now it's a String
+    typeof x;
+    x = "10";   //Quotes still mean string
+    typeof x;
+    x = false;  //This is boolean which can be true or false
+    typeof x;
+    </pre>
+    
+    <p>Comments are deciphered using // in JavaScript. Multi-line comments together can use /* and */ like in CSS. </p>
+    
+    <hr>
+    <h2>In a code editor</h2>
+    
+    <p>Eventually, we'll want to have a separate JavaScript file just to make it cleaner and so it can more easily be applied to all of our pages. For now, we can insert JavaScript in our index.html in script tags.</p>
+    
+    <pre>
+    &lt;script type="text/javascript"&gt;
+        Do something here
+    &lt;/script&gt;       
+    </pre>
+    
+    <hr>
+    <h2>Buttons</h2>
+    
+    <p>A button is one of the easiest things we can add in HTML with some interactivity.</p>
+    
+    <p>Add this to your HTML:</p>
+    <pre>
+    &lt;button id="submit"&gt;Click me.&lt;/button&gt;
+    </pre>
+    <p>Then add this as a script in your code.</p>
+    <pre>
+    var submit = document.getElementById("submit");
+    
+    submit.onclick = function() {
+	    console.log("Button pushed!");
+    };
+    </pre>
+    
+    <p>Or add an alert to it:</p>
+    
+    <pre>
+    alert("Congrats you win!");    
+    </pre>
+    
+    <hr>
+    <h2>Forms</h2>
+    <p>The last thing we'll cover is getting information on a form. In the real world, we'd have a server capturing this data, but for now we'll just get it to display on the page. Here's an example of a basic form:</p>
+    
+    <pre>
+    &lt;input id="name" type="text" placeholder="Input name" /&gt;
+    &lt;textarea id="email" placeholder="Input email" /&gt;
+    &lt;select id="Country"&gt;
+	&lt;option&gt;United States&lt;/option&gt;
+	&lt;option&gt;Canada&lt;option&gt;
+	&lt;option&gt;Mexico&lt;/option&gt;
+	&lt;option&gt;Other&lt;/option&gt;
+	&lt;option&gt;Nowhere&lt;/option&gt;
+    &lt;/select&gt;
+    &lt;button id="submit"&gt;Submit&lt;/button&gt;
+    </pre>
+    
+    <p>And then our JavaScript code:</p>
+    
+    <pre>
+    submit.onclick = function() {
+	    var name = document.getElementById("name").value;
+	    var email = document.getElementById("email").value;
+	    var borough = document.getElementById("borough").value;
+	    console.log(name, email, test);
+	    var message = document.getElementById("message");
+	    message.innerHTML = "Hello " + name + " from "
+	    + borough + ", welcome to my website.";
+    };
+    </pre>
+    
+    <p>We're going to get more in depth with the syntax, with functions, and calling the document object. But it starts to get a little confusing, so for now, let's just try to make forms.</p>
+    
+    </div>
+</body>
+
+</html>
+
