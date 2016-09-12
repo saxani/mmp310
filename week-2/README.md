@@ -16,7 +16,7 @@ Week 2 references:
 Make your own form on a webpage.
 <ul>
 <li>The user should be able to provide input</li>
-<li>There should be some acknowledgement that the details were received</li>
+<li>There should be some acknowledgement that the details were received, beyond console.log</li>
 <li>There should be JavaScript and CSS styling</li>
 <li>Create a new folder in your digital ocean server, upload it</li>
 <Add the server.js folder and change the port</li>
