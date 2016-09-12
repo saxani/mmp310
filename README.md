@@ -86,6 +86,8 @@ Week 2 (September 12th): Basic JavaScript, Digital Ocean, Git
 <li><a href="https://docs.google.com/presentation/d/1m9d10sPCetznteG4g8kfo4rjr2xW5Knkh4x2u_3gdj8/edit#slide=id.p">Digital Ocean steps</a></li>
 <li><a href="http://104.131.210.180:8080/index.html">Intro to JavaScript</a></li>
 
+</ul>
+
 Week 3 (September 19th): JavaScript: datatypes, math, random, and arrays
 
 Week 4 (September 26th): JavaScript: logic and functions
