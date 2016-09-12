@@ -85,6 +85,7 @@ Week 2 (September 12th): Basic JavaScript, Digital Ocean, Git
 <ul>
 <li><a href="https://docs.google.com/presentation/d/1m9d10sPCetznteG4g8kfo4rjr2xW5Knkh4x2u_3gdj8/edit#slide=id.p">Digital Ocean steps</a></li>
 <li><a href="http://104.131.210.180:8080/index.html">Intro to JavaScript</a></li>
+<li><a href="https://github.com/saxani/mmp310/tree/master/week-2">Homework Assignment</a></li>
 
 </ul>
 
