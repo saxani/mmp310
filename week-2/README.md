@@ -1,5 +1,5 @@
 
-Week 2 filse:
+Week 2 files:
 <ul>
 <li>The server.js file is a simple server file to use on Digital Ocean</li>
 <li><strong>Don't</strong> edit the HTML file </li>
