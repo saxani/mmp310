@@ -4,6 +4,7 @@ Week 2 files:
 <li>The server.js file is a simple server file to use on Digital Ocean</li>
 </ul>
 
+Week 2 references:
 <ul>
 <li><a href="https://docs.google.com/presentation/d/1m9d10sPCetznteG4g8kfo4rjr2xW5Knkh4x2u_3gdj8/edit">Digital Ocean slides</a></li>
 <li><a href="http://104.131.210.180:8080/index.html">Intro to JavaScript</a></li>
