@@ -81,7 +81,10 @@ Week 1 (August 29th): Syllabus and HTML/CSS review
 <li>Homework assignment: <a href="https://github.com/saxani/mmp310/tree/master/Week%201">Create a web page</a></li>
 </ul>
 
-Week 2 (September 12th): Basic JavaScript review and intro to Git/Github
+Week 2 (September 12th): Basic JavaScript, Digital Ocean, Git
+<ul>
+<li><a href="https://docs.google.com/presentation/d/1m9d10sPCetznteG4g8kfo4rjr2xW5Knkh4x2u_3gdj8/edit#slide=id.p">Digital Ocean steps</a></li>
+<li><a href="http://104.131.210.180:8080/index.html">Intro to JavaScript</a></li>
 
 Week 3 (September 19th): JavaScript: datatypes, math, random, and arrays
 
