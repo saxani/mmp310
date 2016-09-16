@@ -12,14 +12,13 @@ Week 2 references:
 <li><a href="https://www.wired.com/2010/02/learn_enough_unix_for_your_resume/">Learn enough unix for your resume</a> </li>
 </ul>
 
-<h2>Homework Assignment 1</h2>
+<h2>Homework Assignment 2</h2>
 Make your own form on a webpage.
 <ul>
 <li>The user should be able to provide input</li>
 <li>There should be some acknowledgement that the details were received, beyond console.log</li>
 <li>There should be JavaScript and CSS styling</li>
-<li>Create a new folder in your digital ocean server, upload it</li>
-<Add the server.js folder and change the port</li>
+<li>Upload your finished file to your github account/li>
 <li>Forward me the link via Slack</li>
 <ul>
 
