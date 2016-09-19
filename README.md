@@ -70,6 +70,13 @@ Computers are available for student usage in the locations listed on http://www.
 
 For MMP and MMA tutoring, please visit BMCC's <a href="http://www.bmcc.cuny.edu/lrc/schedule.jsp" target="_blank">tutoring schedule</a>.
 
+<h3>Tutorials</h3>
+Here are some tutorials that are going to be useful for starting your webpages and creating different components for them
+<ul>
+<li><a href="https://docs.google.com/presentation/d/1SSQSmb6z-V5ppWpLiHsfRT4sqO8FysiqmAKhzqdh4pE/edit#slide=id.p">File Structure and Brackets</a></li>
+<li><a href="https://docs.google.com/presentation/d/1IfGw-su8vU48sqdUO4sE-sWOFD5KrzNz_2xuYz__D0U/edit#slide=id.p">Uploading homework to Github</a></li>
+</ul>
+
 <h2>Weekly Schedule</h2>
 Week 1 (August 29th): Syllabus and HTML/CSS review
 <ul>
