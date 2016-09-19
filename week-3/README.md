@@ -11,7 +11,7 @@ The magic eight ball teams app will randomly get everyone in class into pairs.
 The homework assignment is to make a magic eight ball app on a web page. The user provides input, there is randomization and an answer/fortune is returned. 
 <ul>
 <li>Use Math.random to randomize choices</li>
-<li>Store choices in an array</li>
+<li>Store potential returns in an array</li>
 <li>Use some degree of CSS to make the page look decent</li>
 <li>COLLABORATE with your partner over Github</li>
 <li>Whoever has the master on Github, submit the link over Slack</li>
