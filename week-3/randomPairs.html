@@ -1,0 +1,102 @@
+<!doctype html>
+<html>
+
+<head> 
+<title>Class sorter</title>
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+    <h1>Magic Ball Sorter</h1>
+    
+    <p>In teams of two, make your own magic eight ball with JavaScript. It should use an array to store the different magic eight ball outcomes, and Math.random to utilize the random choice. There should be a way for the user to start the magic eight ball.</p>
+    
+    <p>One of you start a public repo for the project and the other person become a collaborator. When I look at track changes, I should be able to see that both people did work on it.</p>
+    
+    <p>The assignment should obviously be on github then, and send me the link on Slack.</p>
+
+    How many people in class?
+    <select id="numberChooser">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+        <option value="7">7</option>
+        <option value="8">8</option>
+        <option value="9">9</option>
+        <option value="10">10</option>
+        <option value="11">11</option>
+        <option value="12">12</option>
+        <option value="13">13</option>
+        <option value="14">14</option>
+        <option value="15">15</option>
+        <option value="16">16</option>
+    </select>
+    <div id="theNames"><p></p>
+    
+    <form id="myForm">
+        Name: <input type="text" id="name1" value=""><br />
+        Name: <input type="text" id="name2" value=""><br />
+        Name: <input type="text" id="name3" value=""><br />
+        Name: <input type="text" id="name4" value=""><br />
+        Name: <input type="text" id="name5" value=""><br />
+        Name: <input type="text" id="name6" value=""><br />
+        Name: <input type="text" id="name7" value=""><br />
+        Name: <input type="text" id="name8" value=""><br />
+        Name: <input type="text" id="name9" value=""><br />
+        Name: <input type="text" id="name10" value=""><br />
+        Name: <input type="text" id="name11" value=""><br />
+        Name: <input type="text" id="name12" value=""><br />
+        Name: <input type="text" id="name13" value=""><br />
+        Name: <input type="text" id="name14" value=""><br />
+        Name: <input type="text" id="name15" value=""><br />
+        Name: <input type="text" id="name16" value=""><br />
+    </form>
+    </div>
+    
+    <br />
+    
+    <button id="sortButton"> Sort names </button>
+    <div id="groupNames"> </div>
+    
+       
+    <script>
+        //My form with all names
+        var myForm = document.getElementById("myForm");
+        var sortButton = document.getElementById("sortButton");
+        var names = [];
+    
+        
+        sortButton.onclick = function () {
+            //Figure out how many names there were
+            var numberChooser = document.getElementById("numberChooser").value;
+            
+            //Add each name to my names array
+            for(i = 0; i<numberChooser; i++){
+                names.push(myForm.elements[i].value);
+            }
+            
+            //current index keeps track of the names being randomized
+            var currentIndex = names.length, temporaryValue, randomIndex;
+            // While there remain elements to shuffle...
+            while (0 !== currentIndex) {
+                // Pick a remaining element...
+                randomIndex = Math.floor(Math.random() * currentIndex);
+                currentIndex -= 1;
+                // And swap it with the current element.
+                temporaryValue = names[currentIndex];
+                names[currentIndex] = names[randomIndex];
+                names[randomIndex] = temporaryValue;
+            } 
+            
+            //Write the names below
+            for(i=0; i<names.length; i=i+2){
+                document.getElementById("groupNames").innerHTML += names[i] + " with " + names[i+1] + "<br/>";
+            }
+        }
+        
+    </script>
+</body>
+</html

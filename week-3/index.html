@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>JavaScript Datatypes and Random</title>
+    <link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+   <div id="container">
+    <h1>JavaScript Datatypes</h1>
+    <hr>
+    
+    <p>We got into different types of variables last week, the prodominate ones being a number, String, and boolean.</p>
+    <ul>
+        <li>Numbers: Any number, whole or floating point (Known as integers and floats in other programming languages)</li>
+        <li>String: Words, letters, numbers and special characters with quotes around them</li>
+        <li>Boolean: true or false. Or in computer speak, 1 and 0.</li>
+    </ul>
+    
+    <hr>
+    <h3>Numbers</h3>
+    
+    <p>Let's understand a it more functionality we have at our disposal. We'll start with using the console. The shortcut is <i>CMD + OPTION+ J.</i> </p>
+    
+    <p>Start by typing:</p>
+    
+    <pre>
+    var x = 1;
+    console.log(x);
+    x++;
+    console.log(x);
+    x+=5.5;
+    x-=3.14159265359;
+    typeof x;
+    x = x * "number";
+    </pre>
+    
+    <p>NaN means "Not a Number" in JavaScript. If you try to evaluate a Sting that can't be parsed into a number it will return this value (or lack thereof). We can also use the isNaN() function to see if variables we have are numbers. It seems silly now, but it may come in handy when we're dealing with Strings and numbers.</p>
+    
+    <pre>
+    isNaN(NaN);
+    isNaN("hello world");
+    isNaN("7"); // why doesn't this return false?
+    </pre>
+    
+    <hr>
+    <h3>Strings</h3>
+    <p>Strings are sequences of individual characters in JavaScript. char is actually a variable type for other programming languages. Strings are essentially arrays (more on that below) of characters. A String has a .length attribute which is now many characters it is. </p>
+    
+    <pre>
+    "Hello World".length;
+    "H l o W r d".length;
+    var y = "Hello World";
+    y.length;
+    </pre>
+    
+    <p>We can also look up what character is in an array, and we can replace parts of Strings entirely.</p>
+    
+    <pre>
+    y.charAt(0);
+    y.charAt(6);
+    y.charAt(12);
+    y.replace("Hello", "Goodbye");   
+    </pre>
+    
+    <p>There are so many different String methods which come particularly in handy when parsing text from APIs. We'll get that into much later. But for now, check <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String#Methods_2">these</a> out at your leisure.</p>
+    
+    <hr>
+    
+    <h3>Addition or Concatenation</h3>
+ 
+    <p>Hopefully at this point we all understand addition. In JavaScript, when we want to add two words together, we use the addition sign as well. That's referred to as concatenation.</p>
+    
+    <pre>
+    var words = "Hi" + "You Guys";    
+    </pre>
+    
+    <p>That's also how we can change innerHTML or write in the console log and add multiple datatypes and variables together. Addition vs. concatenation starts to get a little tricky, so we need to be clear what we're doing.</p>
+    
+    <pre>
+    var x = 1;
+    var y = "7";
+    x + y;
+    typeof x + y;
+    y + x;
+    x + +y;
+    x + Number(y);
+    typeof x;
+    x + Number("Seven"); //It's not this smart
+    </pre>
+    
+    <hr>
+    <h3>Boolean</h3>
+    
+    <p>We know that booleans evaluate to true or false. JavaScript will make everything that's a variable be true or false. Numbers and characters are true, whereas NaN, null, "", undefined, and 0 are false. Since boolean variables are still declared with 'var', we only use that word as a function to evaluate if something is true or false. We do that with a capital B.</p>
+    
+    <pre>
+    Boolean("");
+    Boolean(null);
+    Boolean(4);
+    </pre>
+    
+    <hr>
+    <h3>Arrays</h3>
+
+    <p>An array is an object that stores multiple variables or values. Within JavaScript syntax, they are referenced as objects (i.e. with the typeof function), but it is actually an array object with it's own methods, like Array.isArray(). Arrays become so important as our programs become larger. We don't want to save 100 different variables of user names, if we can just have an array called 'names' with 100 different names within them.</p>
+    
+    <p>Arrays can be any datatype.</p>
+    <pre>
+    var fruits = ["banana", "apple", "watermelon", "kiwi"];
+    var nums = [22, 33, 44, 55, 66, 77];
+    var things = [18, "the sky", true, "superman"];
+    var emptyArray = [];
+    </pre>
+    
+    <p>Every value in an array is indexed with a number and referred to with that. Just to confuse you, all arrays start at index number [0] not at 1. </p>
+    
+    <pre>
+    fruits[3];
+    fruits[0];
+    things[2];
+    </pre>
+    
+    <p>We can always replace, add, or subtract values from arrays after they've been assigned their original values (or left empty at the start of the program).</p>
+    
+    <pre>
+    fruits[0] = "raspberry";
+    fruits.push("mango");
+    fruits.pop(); //Remove last
+    fruits.shift(); //Remove first
+    fruits.unshift("blueberry");
+    </pre>
+    
+    <p>Just like everything else so far, we can get typeof if needed to individual values in an array, which may be valuable since they can be different types. </p>
+    
+    <pre>
+    console.log(typeof things[1]);  
+    console.log(typeof things[2]);  
+    </pre>
+    
+    <p>Here are a couple examples of handy manipulation you can do with arrays.</p>
+    
+    <pre>
+    var a = ["h", "e", "l", "l", "o"];
+    var b = a.join("");
+    console.log(typeof b);
+    var c = b.split("");
+    console.log(typeof c);
+    </pre>
+    
+    <p>Just like Strings there are tons of methods for arrays, some may be very useful depending on what you're trying to do to them and access within them. The <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array#Methods_2">Mozilla documentation</a> is good for overviewing them.</p>
+    
+    <hr>
+    <h3>Randomness</h3>
+    
+    <p>The ability to add randomness in our computer programs is a huge element that makes it interactive and dynamic. It allows for things to not always be the exact same way. Like the Array object, there's a Math object in JavaScript that random falls under. So it's a random method within the Math object, and appears as Math.random(). That alone would give us a number between 0 and 1.</p>
+    
+    <pre>
+    var j = Math.random();
+    console.log(j);    
+    </pre>
+    
+    <p>Math.random by itself is going to give us a floating point number which often isn't very useful. For example, if we want to randomly select between values in an array we made above, we need a whole number to reference the index. Math.floor(), another Math method will round down of us.</p>
+    
+    <pre>
+    j = Math.floor(Math.random());    
+    </pre>
+    
+    <p>Now we have a whole number, but it will always be 0 right now. To make Math.random work for numbers greater than 1, we multiply it by the largest value we'd like.</p>
+    
+    <pre>
+    j = Math.floor(Math.random() * 100);
+    i = Math.floor(Math.random() * fruits.length);
+    fruits[Math.floor(Math.random() * fruits.length)];    
+    </pre>
+    
+    </div>
+</body>
+
+</html>
+
