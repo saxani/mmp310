@@ -88,7 +88,13 @@ Week 2 (September 12th): Basic JavaScript, Digital Ocean, Git
 
 </ul>
 
-Week 3 (September 19th): JavaScript: datatypes, math, random, and arrays
+Week 3 (September 19th): JavaScript: datatypes, math, random, arrays, Github
+<ul>
+<li><a href="http://104.131.210.180:8092/index.html">Datatypes</a></li>
+<li><a href="http://104.131.210.180:8092/randomPairs.html">Magic Ball Teams</a></li>
+<li><a href="https://docs.google.com/presentation/d/14a1oC6qGu8AjrfUBazd2EIlaQ8bwA4LS2rmBehLzZpc/edit#slide=id.p">Github</a></li>
+<li><a href="https://github.com/saxani/mmp310/tree/master/week-3">Homework Assignment</a></li>
+</ul>
 
 Week 4 (September 26th): JavaScript: logic and functions
 
