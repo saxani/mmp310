@@ -1,7 +1,7 @@
 <h1>Week 3 (September 19th): JavaScript: datatypes, math, random, arrays, Github</h1>
 <ul>
-<li><a href="http://104.131.210.180:8092/index.html">Datatypes</a></li>
-<li><a href="http://104.131.210.180:8092/randomPairs.html">Magic Ball Teams</a></li>
+<li><a href="http://shaunaxani.com/cuny/mmp310/week3/index.html">Datatypes</a></li>
+<li><a href="http://shaunaxani.com/cuny/mmp310/week3/randomPairs.html">Magic Ball Teams</a></li>
 <li><a href="https://docs.google.com/presentation/d/14a1oC6qGu8AjrfUBazd2EIlaQ8bwA4LS2rmBehLzZpc/edit#slide=id.p">Github</a></li>
 </ul>
 
