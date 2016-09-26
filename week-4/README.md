@@ -1,7 +1,7 @@
 <h1>Week 4 (September 26th): JavaScript: functions, logic</h1>
 <ul>
-<li><a href="http://shaunaxani.com/cuny/mmp310/week4/functions.html">Datatypes</a></li>
-<li><a href="http://shaunaxani.com/cuny/mmp310/week4/logic.html">Magic Ball Teams</a></li>
+<li><a href="http://shaunaxani.com/cuny/mmp310/week4/functions.html">Functions</a></li>
+<li><a href="http://shaunaxani.com/cuny/mmp310/week4/logic.html">Logic</a></li>
 <li><a href="https://docs.google.com/presentation/d/14a1oC6qGu8AjrfUBazd2EIlaQ8bwA4LS2rmBehLzZpc/edit#slide=id.p">Github</a></li>
 </ul>
 
