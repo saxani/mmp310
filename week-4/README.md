@@ -15,4 +15,5 @@ Finish the homework assignment of making your own fancy magic eight ball app on 
 <li>COLLABORATE with your partner over Github</li>
 <li>Whoever has the master on Github, submit the link over Slack</li>
 <li>If one of you has access to your CUNY server space, post the page and send that link as well</li>
+<li>Next week's class isn't until Thursday, and the assignment is due at <b>12:00am on Tuesday</b></li>
 </ul>
