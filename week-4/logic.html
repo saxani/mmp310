@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>JavaScript Logic</title>
+    <link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+   <div id="container">
+    <h1>JavaScript Logic</h1>
+    <hr>
+    
+       <p>To harness the power of code we need to utilize programming logic to make dynamic decisions as our programs are executed. We'll start with conditional statement, with roughly follow the format:</p>
+       
+       <pre>
+        If (an expression which can be true or false){
+            Then execute this block of code
+        }
+       </pre>
+       
+       <p>This is an 'if statement'. We'll break down the components in the next sections.</p>
+       
+       <hr>
+       <h3>Evaluators</h3>
+       
+       <p>To use logic, we need to be able to evaluate one number/string/variable as it compares to another. For that we'll use basic evaluators you likely know from math class.</p>
+       
+       <pre>
+        <b>&gt;</b> - greater than
+        <b>&lt;</b> -  less then
+        <b>&gt;=</b> -  greater than or equal to
+        <b>&lt;=</b> - less than or equal to   
+       </pre>
+    
+        <p>These are fairly straightforward evaluators. Though you'd likely feed at least one variable through this expression, it come down to types of logic like:</p>
+    
+        <pre>
+        If (8>5) {
+            //Execute this code block
+        }
+        </pre>
+        
+        <p>There are a few more evaluators we need to be aware of for evaluating expressions:</p>
+    
+        <pre>
+        <b>==</b> - Equal to
+        <b>!=</b> - Not equal to
+        <b>===</b> - Strict equal to
+        <b>!==</b> - Strict not equal to      
+        </pre>
+        
+        <p>As we've previously discussed, datatypes in JavaScript can be pretty fluid. The programming language recognizes that the string <b>"5"</b> is actually equal to the number <b>5</b>. So the strict evaluators also look at type.</p>
+        
+        <pre>
+        "3" == 3 //true
+        "3" === 3 //false
+        "" == false //true
+        "" === false //false 
+        null == undefined //true
+        null === undefined //false   
+        </pre>
+        
+        <p>These are referred to as 'truthy' and 'falsy'. Falsy statements that would not satisfy the expression in an <b>if statement</b> are:</p>
+        
+        <pre>
+        var x = false;
+        var x = 0;
+        var x = "";
+        var x = 10/'falsy';  //Becomes NaN
+        var x; //not assigned a value (null or undefined).    
+        </pre>
+        
+        <p>And anything with a value would be considered truthy.</p>
+        
+        <p>Since we use one the <b>=</b> sign to assign a value to a variable, that's why two (and three) equals signs are used to evaluate. And the exclamation point in many programming languages means 'not'. If we're evaluating a boolean statement: </p>
+        
+        <pre>
+        if(myVariable == false){
+            //Block of code
+        }
+        </pre>
+          
+        <p>would be the same as:</p>
+        
+        <pre>
+        if(!myVariable) {
+            //Block of code
+        }
+        </pre>
+        
+        <hr>
+        <h3>if/else/else if</h3>
+    
+        <p>Now that we know the evaluators, we can make full <b>if statements</b>. There are three types. Let's set up a webpage with the appropriate HTML tags and start putting content into a script tag.</p>
+    
+        <p>First, just one single <b>if statement</b>:</p>
+    
+        <pre>
+        &lt;script type="text/javascript"&gt;
+            if(8 > 4){
+                alert("The 8 is bigger than the 4");
+            }
+
+            if("4" > 8){
+                alert("The 4 is bigger than the 8");
+            }
+
+            alert("Done script");
+        &lt;/script&gt;
+        </pre>
+    
+        <p>So, there are two conditional statements, one that is satisfied and one that is not. Try swapping out the numbers for Strings and booleans, and define a variable at the top of the script and use that in the statement.</p>
+    
+        <p>So, if the <b>if statement</b> is satisfied, code is executed. Otherwise the program runs like nothing happened. But we will sometimes want something else to happen if that code is not satisfied, so we make an <b>else statement</b>.</p>
+    
+        <pre>
+        &lt;script type="text/javascript"&gt;
+            if(false === ""){
+                alert("The 8 is bigger than the 4");
+            } else {
+                alert("The condition didn't apply");
+            }
+
+            alert("Done script");
+        &lt;/script&gt;
+        </pre>
+    
+        <p>When our code gets complex, it starts to get confusing what expressions are satisfied and what are not, so if/else statements are a good way to make sure two blocks of code aren't executed, when there should only be one.</p>
+    
+        <p>Finally, if we have a series of if-like conditions, but only one should be satisfied, we use an <b>if/else if statement</b>.</p>
+        
+        <pre>
+        &lt;script type="text/javascript"&gt;
+            if(8 > 10){
+                alert("Expression one was met");
+            } else if (11 > 10) {
+                alert("Expression two was met");
+            } else if (15 > 10) {
+                alert("Expression three was met");
+            } else {
+                alert("No expression was met");
+            }
+
+            alert("Done script");
+        &lt;/script&gt;
+        </pre>
+    
+        <p>Note that both the second and third expressions would have been satisfied. It will come up when multiple expressions may be satisfied, and you need to strategically organize your code.</p>
+    
+        <hr>
+        <h3>Logical Operators</h3>
+        
+        <p>In many situations, we'll need our code to run differently based on a combination of factors. In our expressions, we insert the equivalent of 'and' and/or 'or' for that. <b>&amp&amp</b> represents 'and', and <b>||</b> represents 'or'.</p>
+    
+        <pre>
+        &lt;script type="text/javascript"&gt;
+            if(12 > 10 &amp&amp "20"==20){
+                alert("Expression one was met");
+            } 
+               
+            if (11 > 10 || 5 > 20) {
+                alert("Expression two was met");
+            } 
+               
+            var x = true;
+              
+            if (15 > 10 || 0 === false &amp&amp !x) {
+                alert("Expression three was met");
+            } 
+
+            alert("Done script");
+        &lt;/script&gt;
+        </pre>
+    
+        <p>As you can see, evaluators and logical operators start to get pretty confusing, but they're crucial for figuring out how your program will execute.</p>
+    
+        <hr>
+        <h3>Switch Statements</h3>
+    
+       <p>Switch statements are another way to make conditionals work. <b>If statements</b> and objects (learn about these next week) can also end up doing many of the same things, but as you know there's multiple ways to attack a problem in web development.</p>
+    
+    <p>They're accomplished by giving the statement a parameter, and if it satisfies one of the options, it executes that block of code:</p>
+    
+    <pre>
+    &lt;script type="text/javascript"&gt;
+       var x = 2;
+       
+       switch(x) {
+       
+        case 1:
+           alert("It was case one!");
+           break;
+       
+        case 2:
+           alert("It was case two!");
+           break;
+           
+        case 3:
+            alert("It was case three!");
+            break;    
+       }
+       
+       alert("Done script");
+    &lt;/script&gt; 
+    </pre>
+
+    <hr>
+    <h3>For Loops</h3>
+    
+       <p>Along with <b>if/else statements</b>, the other most common logic statement is <b>for loops</b>. It's a block of code that will repeat until the conditions in the expression have been satisfied.</p>
+    
+    <p>Here's an example to count to five:</p>
+    
+    <pre>
+    &lt;script type="text/javascript"&gt;
+        for (i = 0; i &lt; 5; i++) {
+            alert("This is time " + i + " through the loop");        
+        }
+        
+        alert("done script");
+    &lt;/script&gt;   
+    </pre>
+    
+    <p>The first part of the for loop is the <b>initialization</b> which defines a variable that acts as counter, and can be used through the loop. The second part is the condition, which basically says 'as long as i is less than 5, go through the loop again. And finally, the third part is the update. In this loop it's adding one each time (i = i + 1), but it could be anything.</p>
+    
+    <p>It's convenient when the loop utilizes the counter (i), but it doesn't have to. That can be there to merely keep track of the loop. But we can also change it around so it can satisfy numbers that aren't in succession.</p>
+    
+    <pre>
+    &lt;script type="text/javascript"&gt;
+        //Measuring inches for feet
+        for (i = 0; i &lt; 97; i = i + 12){
+             var feet = i/12;
+             console.log("The wall is " + i + " feet tall");
+        }
+    &lt;/script&gt;   
+    </pre>
+    
+    <p><b>For Loops</b> make it much easier to repeat blocks of code for different parameters and will definitely come in hands as we move forward.</p>
+ 
+    <p>There are two more loops that are used occasionally, the <b>while loop</b> and the <b>do while loop</b>. <b>for loops</b> can generally accomplish the same thing, but with the <b>while</b> loops, everything isn't initialized at the top of the loop:</p>
+    
+    <pre>
+    &lt;script type="text/javascript"&gt;
+        var i = 0;
+           
+        while(i &lt; 5){
+            alert("This is time " + i + "through the loop");
+            i++;
+        }
+        alert("done script");    
+    &lt;/script&gt;  
+    </pre>
+    
+    <p>And the <b>do while loop</b> is only different since the condition is at the end, it will at least run once regardless if it's been satisfied:</p>
+    
+    <pre>
+     &lt;script type="text/javascript"&gt;
+        var i = 1;
+           
+        do {
+            alert("This is time " + i + "through the loop");
+            i ++;
+        } while (i &lt; 1);
+        alert("done script");    
+    &lt;/script&gt;  
+    </pre>
+   
+    </div>
+</body>
+
+</html>
+

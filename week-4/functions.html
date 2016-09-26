@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>JavaScript Functions</title>
+    <link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+   <div id="container">
+    <h1>JavaScript Functions</h1>
+    <hr>
+    
+       <p>We know how to declare, assign and use variables, whether it be Strings, numbers, booleans, or even arrays. We know how to change around those variables using arithmatic and concatenating. Now it's time to enclose all of this information in <b>functions</b>.</p>
+       
+       <p>Functions are simply a statement or series of statements. It's not overly difficult to define. The key thing to remember is if you're writing code you want to be executed later in the program (as in after the page loads), you need a function.</p>
+    
+    <hr>
+    <h3>A Basic Function</h3>
+    
+    <p>Let's start with a very basic function that will change some text on the page (not unlike what we've already done in class examples). Let's use Brackets, so we can see how the page responds as we add code. </p>
+    
+    <p>In the HTML portion, besides the standard tags we need, type in the body:</p>
+    
+    <pre>
+    &lt;h1&gt;My Site&lt;/h1&gt;  
+    &lt;div id="message"&gt;Welcome to this beautiful site!&lt;/div&gt;   
+    </pre>
+    
+    <p>And then we add out JavaScript:</p>
+    <pre>
+    &lt;script type="text/javascript"&gt;
+        function updateMessage(){
+            var message = document.getElementById('message');
+            message.innerHTML = "We're so happy you're here!";
+        }
+        
+        alert('Into JavaScript');
+    &lt;/script&gt; 
+    </pre>
+    
+    <p>Now, nothing actually changed on our page, but the program ran through our JavaScript because the alert went off.</p>
+    
+    <p>We declared our function called <b>updateMessage()</b>, but we need to call the function.</p>
+    
+    <p>Diving into this function: it has the function keyboard, it has a function name. It doesn't have any parameters, which would be in the parenthesis. And in the curly statements is a block of code, which could be anything. For now it's relating to the DOM (document object model), and swapping out what's in the <b>message</b> div for the new sentence in quotes.</p>
+    
+    <p>But we need to call this function. To do so, let's just add this below the alert in our script.</p>
+    
+    <pre>
+    updateMessage();
+    </pre>
+    
+    <p>The function stores the block of code, to be used later. Calling the function executes the entire block of code.</p>
+    
+    <hr>
+    <h3>Functions with Parameters</h3>
+    
+    <p>The above is good if we don't need to pass anything through the function (like button clicks). But sometimes we want to feed parameters through the function that are gathered from user input (like text fields) or other dynamic content (like time of day).</p>
+    
+    <p>To use parameters in our functions, we need to put them in the parenthesis. To demonstate this, we'll use the prompt method. It's like the alert method, but gets user input. Let's replace the previous JavaScript with the following:</p>
+    
+    <pre>
+    &lt;script type="text/javascript"&gt;
+        var name = prompt("What is your name?");
+        function updateMessage(messageName){
+            var message = document.getElementById('message');
+            message.innerHTML = "We're so happy you're here, " + messageName + "!";
+        }
+        
+        updateMessage(name);
+    &lt;/script&gt; 
+    </pre>
+    
+    <p>The updateMessage(name); call sent the variable name as a parameter. When the function is receiving that parameter, it's just looking for one variable, and it can be named whatever inside of the function (I changed it in the above, but it could've been called 'name' still). We can also use as many parameters as we'd like.</p>
+    
+    <hr>
+    <h3>Functions with Return Values</h3>
+    
+    <p>Sometimes we want functions to return information to the code that called them. We use <i>return</i> for that.</p>
+    
+    <pre>
+    &lt;script type="text/javascript"&gt;
+        function calculateArea(width, height){
+            var area = width * height;
+            return area;
+        }
+        
+        var wallOne = calculateArea(3, 5);
+        var wallTwo = calculateArea(8,5);
+        
+        alert("The area of the first wall is " + wallOne + ".";
+        alert("The area of the second wall is " + wallTwo + ".";
+    &lt;/script&gt;   
+    </pre>
+    
+    <p>Return functions can also return multiple values, but we need to use an array for that.</p>
+    
+    <pre>
+    &lt;script type="text/javascript"&gt;
+        function getSize(width, height, depth){
+            var area = width * height;
+            var volume = width * height * depth;
+            var sizes = [area, volume];
+            return sizes;
+        }
+        
+        var areaOne = getSize(3, 5, 3)[0];
+        var volumeOne = getSize(8, 5, 10)[1];
+        
+        alert("The area of the first wall is " + areaOne + ".";
+        alert("The volume of the second wall is " + volumeOne + ".";
+    &lt;/script&gt;   
+    </pre>
+    
+    <hr>
+    
+    <h3>Anonymous Functions</h3>
+ 
+    <p>The functions above are referred to as function declaration. They are declared and can be called later in code. The other type of functions are considered function expressions. They're placed where the interpreter of the web page would expect to see an expression (or assignment for a variable). They also don't have a name, which are referred to as Anonymous Functions.</p>
+    
+    <p>The area function from above could be written as a function expressions as:</p>
+    
+    <pre>
+    var area = function(width, height) {
+        return width * height;
+    }
+    
+    var size = area(3, 5);
+    </pre>
+    
+    <p>The function expression from above can be taken a step further and can be invoked immediately when the program runs that line of code.</p>
+    
+    <pre>
+    var area = (function(){
+        width = 3;
+        height = 5;
+        return width * height;
+    }());
+    </pre>
+    
+    <p>The parenthesis near the end of the code () tell the interpreter to run the code immediately, and the parenthesis around the entire block of code make sure that it's considered to be one element.</p>
+    
+    <hr>
+    <h3>Variable Scope</h3>
+    
+    <p>While our programs are very small, this doesn't become much of an issue, but once they get larger, it's important to properly keep track of variables. Variables can be either <b>global</b> or <b>local</b>. Global variables are defined at the start of the script section, and will remain relevant for the entire script. Local variables are defined within a function cannot be accessed outside of that function.</p>
+    
+    <pre>
+    &lt;script type="text/javascript"&gt;
+       
+        var width = 10;
+        var area;
+        
+        function getSize(){
+            var height = 8;
+            area = height * width;
+        }
+        
+        getSize();
+        alert("The width of the wall is " + width + ".");
+        alert("The height of the second wall is " + height + ".");
+        alert("The area of the wall is " + area + ".");
+    &lt;/script&gt;   
+    </pre>
+    
+    <p>It's important to note that if a variable is defined or assigned twice, the one that has the more local scope will be used.</p>
+    
+    <pre>
+    &lt;script type="text/javascript"&gt;
+       
+        var width = 10;
+        
+        function getSize(){
+            var height = 8;
+            var width = 20;
+            area = height * width;
+        }
+        
+        getSize();
+        alert("The width of the wall is " + width + ".";
+        alert("The area of the wall is " + area + ".";
+    &lt;/script&gt;   
+    </pre>
+   
+    </div>
+</body>
+
+</html>
+

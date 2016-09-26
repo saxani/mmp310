@@ -1,0 +1,20 @@
+body {
+    color:black;
+    background-color:azure;
+    font-family: "helvetica", sans-serif;
+}
+
+h1, h2, h3{
+    color:darkslategray;
+    font-family: "times", serif;
+}
+
+pre{
+    background-color: white;
+}
+
+
+#container {
+    width:70%;
+    margin: auto;  
+}
