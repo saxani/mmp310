@@ -104,6 +104,11 @@ Week 3 (September 19th): JavaScript: datatypes, math, random, arrays, Github
 </ul>
 
 Week 4 (September 26th): JavaScript: logic and functions
+<ul>
+<li><a href="http://shaunaxani.com/cuny/mmp310/week4/functions.html">Functions</a></li>
+<li><a href="http://shaunaxani.com/cuny/mmp310/week4/logic.html">Logic</a></li>
+<li><a href="https://github.com/saxani/mmp310/tree/master/week-4">Homework Assignment</a></li>
+</ul>
 
 Week 5 (Thursday, October 6th): DOM and JavaScript events
 
