@@ -1,0 +1,26 @@
+body {
+    background-color:black;
+    background-image: url(images/background.jpg);
+}
+
+h1, h2, h3 {
+    color: crimson;
+    
+}
+
+.content {
+    background-color: rgba(0,0,0,0.5);
+    color:white;
+}
+
+#hulk{
+    width: 400px;
+}
+
+#furniture{
+    width: 300px;
+}
+
+#theVid {
+    width: 400px;
+}
