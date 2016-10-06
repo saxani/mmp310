@@ -1,7 +1,7 @@
 <h1>Week 5 (October 6th): JavaScript: DOM, Events</h1>
 <ul>
-<li><a href="http://shaunaxani.com/cuny/mmp310/week4/functions.html">Functions</a></li>
-<li><a href="http://shaunaxani.com/cuny/mmp310/week4/logic.html">Logic</a></li>
+<li><a href="http://shaunaxani.com/cuny/mmp310/week5/dom.html">DOM</a></li>
+<li><a href="http://shaunaxani.com/cuny/mmp310/week5/dom.html">Events</a></li>
 
 </ul>
 
