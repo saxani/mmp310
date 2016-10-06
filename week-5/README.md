@@ -35,6 +35,7 @@ You will also propose your midterm by class on October 17th. The midterm will on
 <li>A place for users to input a status and/or image</li>
 <li>A way to update their 'wall'</li>
 <li>Show the list of previously updated statuses</li>
+<li>Nice layout with CSS/HTML expected</li>
 <li>Won't be able to store them all without server side programming</li>
 </ul>
 <li>For class in two weeks, write a paragraph explaining what you want to make. Email it to me.</li>
