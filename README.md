@@ -111,12 +111,20 @@ Week 4 (September 26th): JavaScript: logic and functions
 </ul>
 
 Week 5 (Thursday, October 6th): DOM and JavaScript events
+<ul>
+<li><a href="http://shaunaxani.com/cuny/mmp310/week5/dom.html">DOM</a></li>
+<li><a href="http://shaunaxani.com/cuny/mmp310/week5/events.html">Events</a></li>
+<li><a href="https://github.com/saxani/mmp310/blob/master/week-5">Homework Assignment</a></li>
+</ul>
+Week 6 (October 17th): JavaScript time and the canvas
+<ul>
+<li><a href="http://shaunaxani.com/cuny/mmp310/week6/time.html">Time</a></li>
+<li><a href="http://shaunaxani.com/cuny/mmp310/week6/canvas.html">Canvas</a></li>
+<li><a href="https://github.com/saxani/mmp310/tree/master/week-6">Homework Assignment</a></li>
+</ul>
+Week 7 (October 24th): JavaScript Objects and JQuery
 
-Week 6 (October 17th): JavaScript: loops and time
-
-Week 7 (October 24th): JQuery
-
-Week 8 (October 31st): JavaScript Objects and JSON
+Week 8 (October 31st): JQuery
 
 Week 9 (November 7th): Midterm Project Presentations, more JSON, APIs
 
