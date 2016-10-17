@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>The Canvas</title>
+    <link rel="stylesheet" href="style.css" type="text/css" /> </head>
+
+<body>
+    <div id="container">
+        <h1>The Canvas</h1>
+        <hr>
+        
+        <p>Like using p5, we can use native JavaScript to draw onto a portion of our webpage. This is referred to as the canvas. It's a little bit more complicated than p5, but it doesn't involve using the library.</p>
+        <p>Inserting the canvas is a lot like drawing another HTML element.</p>
+        
+        <div> 
+        
+            <pre>
+                &lt;canvas width="200" height="200" id="myCanvas /&gt;
+            </pre>
+
+            <p>Then we make a script to animate that background</p> 
+
+            <pre>
+            &lt;script type="text/javascript"&gt;
+                var canvas = document.getElementById('myCanvas');
+                var context = canvas.getContext('2d');
+                context.fillStyle="#FF0000";
+                context.fillRect(0,0,canvas.width,canvas.height);
+            &lt;/script&gt;
+           </pre>
+
+            <p>The result is this lovely red square.</p>
+            <canvas width="200" height="200" id="mycanvas" /> 
+
+        </div>
+        
+        <p>The <b>getContext</b> is key for getting the parameters of the canvas and drawing on it. In this case we're setting a fill color (like p5) and drawing a rectangle from (0,0) to the width and height of the canvas.</p>
+        
+        <hr>
+        <h3>The Canvas with a 'draw' loop</h3>
+        
+        <p>With p5, there was a draw loop our program would run through every frame (usually about 30-frames per second). JavaScript is a-synchronous and doesn't function like that, but using a timing function (setInterval), we can effectively add a draw loop.</p> 
+        
+        <div>
+        
+        <pre>
+            &lt;canvas width="300" height="300" id="myCanvas2" /&gt;
+
+            &lt;script type="text/javascript"&gt;
+
+                var canvas = document.getElementById('myCanvas2');
+                var context = canvas.getContext('2d');
+
+                var x = 0;
+                var y = Math.random()*canvas.width;
+                var draw = function() {
+                    context.beginPath();
+                    // This is silly but it's what we have to do to get a random hex string
+		    context.strokeStyle='#'+(Math.random()*0xFFFFFF&lt;&lt;0).toString(16);
+                    context.moveTo(x,y);
+                    context.lineTo(canvas.width/2,canvas.height/2);
+                    context.stroke();
+                    x++;
+                    if (x > canvas.width) { x = 0; }
+                    y = Math.random()*canvas.width;
+                };
+
+                setInterval(draw,1000/30); // 30 x per second
+
+            &lt;/script&gt;
+            </pre>
+
+            <canvas width="300" height="300" id="myCanvas2" /> 
+        </div>
+        
+        <p>The set interval essentially acted like the draw loop in p5. Every 30 frames per second, the draw function will be entered and a new line will be drawn.</p>
+        
+        <hr>
+        <h3>The Canvas with a 'draw' loop</h3>
+        
+        <p>By adding variables that we can iterate on, we can start to get motion in our animations.</p>
+        
+        <div>
+            <pre>
+            &lt;canvas width="300" height="300" id="myCanvas3" /&gt;
+            
+            &lt;script&gt;
+            var canvas3 = document.getElementById('myCanvas3');
+            var context3 = canvas3.getContext('2d');
+            var x3 = canvas3.width/2;
+            var y3 = canvas3.width/2;
+            var direction = 5;
+            var radius=15;
+            context3.fillStyle = "#ff0000";
+            var draw3 = function () {
+                context3.clearRect(0, 0, canvas3.width, canvas3.height);
+                context3.beginPath();
+                context3.arc(x3,y3,radius,0,2*Math.PI);
+                context3.fill();
+                x3+=direction;
+
+                if (x3&gt;canvas3.width - radius || x3&lt;0 +radius){
+                     direction = -direction;  
+                }
+            };
+            setInterval(draw3, 1000 / 30); // 30 x per second
+            &lt;/script&gt;
+           </pre>
+           <canvas width="300" height="300" id="myCanvas3" />
+        </div>
+        
+        <p>From here, we can keep growing our programs to feature complex animations.</p>
+       
+        
+        <hr>
+        <h3>Draw loop and interaction</h3>
+        
+        <p>Interaction gets a bit more difficult in native JavaScript as we'll have to use event listeners to track the mouse or keyboard.</p>
+        
+        <div>
+           <pre>
+            &lt;canvas width="300" height="300" id="myCanvas4" /&gt;
+            
+            &lt;script&gt;
+            var canvas4 = document.getElementById('myCanvas4');
+            var context4 = canvas4.getContext('2d');
+            var x4 = canvas4.width/2;
+            var y4 = canvas4.height/2;
+            var radius2=30;
+            var direction2 = 2;
+            context4.fillStyle = "#00ff00";
+            var draw4 = function () {
+                context4.clearRect(0, 0, canvas4.width, canvas4.height);
+                context4.beginPath();
+                context4.arc(x4,y4,radius2,0,2*Math.PI);
+                context4.fill();
+                context4.stroke();
+            };
+            setInterval(draw4, 1000 / 30); // 30 x per second
+
+            canvas4.addEventListener('mousemove', function(evt) {
+
+                // Get the canvas bounding rect
+                var canvasRect = canvas4.getBoundingClientRect(); 
+                x4 = evt.clientX - canvasRect.left;
+                y4 = evt.clientY - canvasRect.top;
+            }, false);
+            &lt;/script&gt;
+           </pre>
+            
+            <canvas width="300" height="300" id="myCanvas4" />   
+        </div>
+        
+        <hr>
+        <h3>Pixel Manipulation</h3>
+        
+        <p>The canvas starts to get fun when we can get data of what's already there and manipulate it. We can easily draw images already, but in the canvas we can get the data of each pixel and start to play with it. When you click the image below, it will change.</p>
+        
+        <div>
+        <pre>
+        &lt;canvas width="300" height="300" id="myCanvas5" /&gt;
+        
+        &lt;script&gt;
+        var canvas5 = document.getElementById('myCanvas5');
+        var context5 = canvas5.getContext('2d');
+        var img = document.getElementById("drake");
+        context5.drawImage(img, 0, 0, 300, 300);
+        
+        canvas5.addEventListener('mousedown', function(evt) {  
+            // Get the CanvasPixelArray from the given coordinates and dimensions.
+            var imgd = context5.getImageData(0, 0, 300, 300);
+            var pix = imgd.data;
+
+            // Loop over each pixel and invert the color.
+            for (var i = 0, n = pix.length; i &lt; n; i += 4) {
+                pix[i  ] = 255 - pix[i  ]; // red
+                pix[i+1] = 255 - pix[i+1]; // green
+                pix[i+2] = 255 - pix[i+2]; // blue
+                // i+3 is alpha (the fourth element)
+            }
+
+            // Draw the ImageData at the given (x,y) coordinates.
+            context5.putImageData(imgd, 0, 0);
+        }, false);
+        &lt;/script&gt;
+            
+        </pre> 
+        
+        <p>Not in canvas:</p>
+        <img id="drake" width="300" height="300" src="drake-snapchat.png">
+        <p>In canvas (click for fun):</p>
+        <canvas width="300" height="300" id="myCanvas5" />        
+        </div>
+        <p>There are lots of different shapes you can draw and styling you can do. For a full reference, see <a href="http://www.w3schools.com/tags/ref_canvas.asp">the w3 school guide</a>.</p>
+        
+        <p>Also, check out <a href="https://code.tutsplus.com/articles/21-ridiculously-impressive-html5-canvas-experiments--net-14210">21 ridiculously HTML5 Canvas experiments</a>.</p>
+        
+        
+    </div>
+        
+    <script type="text/javascript">
+        
+        //Canvas 1
+        var canvas = document.getElementById('mycanvas');
+        var context = canvas.getContext('2d');
+        context.fillStyle = "#FF0000";
+        context.fillRect(0, 0, canvas.width, canvas.height);
+  
+        //Canvas 2
+        var canvas2 = document.getElementById('myCanvas2');
+        var context2 = canvas2.getContext('2d');
+        var x = 0;
+        var y = Math.random() * canvas2.width;
+        var draw = function () {
+            context2.beginPath();
+            // This is silly but it's what we have to do to get a random hex string
+		    context2.strokeStyle='#'+(Math.random()*0xFFFFFF<<0).toString(16);
+            context2.moveTo(x, y);
+            context2.lineTo(canvas2.width / 2, canvas2.height / 2);
+            context2.stroke();
+            x++;
+            if (x > canvas2.width) {
+                x = 0;
+            }
+            y = Math.random() * canvas2.width;
+        };
+        setInterval(draw, 1000 / 30); // 30 x per second
+        
+        //Canvas 3
+        var canvas3 = document.getElementById('myCanvas3');
+        var context3 = canvas3.getContext('2d');
+        var x3 = canvas3.width/2;
+        var y3 = canvas3.width/2;
+        var direction = 5;
+        var radius=15;
+        context3.fillStyle = "#ff0000";
+        var draw3 = function () {
+            context3.clearRect(0, 0, canvas3.width, canvas3.height);
+            context3.beginPath();
+            context3.arc(x3,y3,radius,0,2*Math.PI);
+            context3.fill();
+            x3+=direction;
+            
+            if (x3>canvas3.width - radius || x3<0 +radius){
+                 direction = -direction;  
+            }
+        };
+        setInterval(draw3, 1000 / 30); // 30 x per second
+        
+        
+        //Canvas 4
+        var canvas4 = document.getElementById('myCanvas4');
+        var context4 = canvas4.getContext('2d');
+        var x4 = canvas4.width/2;
+        var y4 = canvas4.height/2;
+        var radius2=30;
+        var direction2 = 2;
+        context4.fillStyle = "#00ff00";
+        var draw4 = function () {
+            context4.clearRect(0, 0, canvas4.width, canvas4.height);
+            context4.beginPath();
+            context4.arc(x4,y4,radius2,0,2*Math.PI);
+            context4.fill();
+            context4.stroke();
+        };
+        setInterval(draw4, 1000 / 30); // 30 x per second
+        
+        canvas4.addEventListener('mousemove', function(evt) {  
+            // Get the canvas bounding rect
+            var canvasRect = canvas4.getBoundingClientRect(); 
+            x4 = evt.clientX - canvasRect.left;
+            y4 = evt.clientY - canvasRect.top;
+        }, false);
+        
+        canvas4.addEventListener('mousedown', function(evt) {  
+            context4.fillStyle='#'+(Math.random()*0xFFFFFF<<0).toString(16);
+        }, false);
+        
+        
+        
+        //Canvas 5
+        var canvas5 = document.getElementById('myCanvas5');
+        var context5 = canvas5.getContext('2d');
+        var img = document.getElementById("drake");
+        
+        img.onload = function () {
+            context5.drawImage(img, 0, 0, 300, 300);
+        };
+        
+        canvas5.addEventListener('mousedown', function(evt) {  
+            // Get the CanvasPixelArray from the given coordinates and dimensions.
+            var imgd = context5.getImageData(0, 0, 300, 300);
+            var pix = imgd.data;
+
+            // Loop over each pixel and invert the color.
+            for (var i = 0, n = pix.length; i < n; i += 4) {
+                pix[i  ] = 255 - pix[i  ]; // red
+                pix[i+1] = 255 - pix[i+1]; // green
+                pix[i+2] = 255 - pix[i+2]; // blue
+                // i+3 is alpha (the fourth element)
+            }
+
+            // Draw the ImageData at the given (x,y) coordinates.
+            context5.putImageData(imgd, 0, 0);
+        }, false);
+        
+    </script>
+</body>
+
+</html>

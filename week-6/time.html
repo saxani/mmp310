@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>JavaScript Time</title>
+    <link rel="stylesheet" href="style.css" type="text/css" /> </head>
+
+<body>
+    <div id="container">
+        <h1>JavaScript Time</h1>
+        <hr>
+        
+        <p>Often times in our code we'll want to utilize time by:</p>
+        <ul>
+            <li>Wanting to know what today (or any other day) is</li>
+            <li>Wanting to have something execute at a certain time</li>
+            <li>Wanting something to execute repeatedly</li>
+        </ul>
+        
+        <p>JavaScript has a <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date">date object</a> with a ton of different methods and parameters. You can get down the current time down to the nearest millisecond, set a date, and figure out elapsed time since your program has been running. All date functionality references January 1st, 1970, known as <a href="https://en.wikipedia.org/wiki/Unix_time">Unix time</a>.</p>
+        
+        <p>Here is a bunch of date information we can get. Try typing them in the console.</p>     
+     
+            <pre>
+            Date();
+            Date.now();
+            var today = new Date(Date());
+            today.getDate();
+            today.getDay();
+            today.getFullYear();
+            today.getHours();
+            today.getMillliseconds();
+            today.getMonth();
+            today.getSeconds();
+            today.getTime();
+            var yesterday = new Date("Sun Mar 27 2016");
+            </pre>
+
+            <p>The latter was how to make a new date in our program that's not this exact second. You can right out dates a number of ways.</p> 
+
+            <pre>
+            var birthday = new Date('December 17, 1995 03:24:00');
+            var birthday = new Date('1995-12-17T03:24:00');
+            var birthday = new Date(1995, 11, 17);
+            var birthday = new Date(1995, 11, 17, 3, 24, 0);
+           </pre>
+
+         <p>If we want to figure out the time elapsed since our program has run, based on date (and not the functions we'll learn about next, we just need to set a variable when the page loads, and then one when we need to figure out the current time.</p>
+        
+        
+        <pre>
+        // using Date objects
+        var start = Date.now();
+
+        // Something happens for a long time...
+       
+        var end = Date.now();
+        var elapsed = end - start; // elapsed time in milliseconds
+        </pre>
+        
+        <hr>
+        <h3>setTimeout and setInterval</h3>
+     
+        <p>The date object is great, but sometimes what we need is much simpler than that. We can use <b>setTimeout</b> to execute a function at a certain time. Try this in the console:</p>
+        
+        <pre>
+        function time () {
+            alert ("Time!");
+        }
+        
+        setTimeout(time, 3000);
+        </pre>
+        
+        <p>We can also make something happen repeatedly with <b>setInterval</b>. If we simply change the time function from above, it'll happen every three seconds. </p>
+        
+        <pre>
+        function timeAgain () {
+            alert ("Time!");
+        }
+        
+        setInterval(timeAgain, 3000);
+        </pre>
+        
+        <p>If we want to clear either the timeout or the interval, we assign it to a variable, and clearTimeout or clearInterval:</p>
+        
+        <pre>
+        function timeAgain () {
+            alert ("Time!");
+        }
+        
+        var theInt = setInterval(timeAgain, 3000);
+        
+        function timeUp () {
+            clearInterval(theInt);
+        }
+        
+        setTimeout(timeUp, 10000);
+        
+        </pre>
+        
+        <p><b>Note:</b> The alert we're using here pauses time as long as it's up.</p>
+        
+        <p>In class assignment: make a birthday countdown, similar to this <a href="http://www.xmasclock.com/">Christmas countdown</a>. The user should type in their birthday, and it'll show how long until their birthday.</p>
+        
+    </div>
+
+</body>
+
+</html>
