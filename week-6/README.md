@@ -11,7 +11,7 @@
 <li>UX designers use this to make sure the flow of the site will make sense</li>
 <li>Game designers can also use similar sketches to plan the flow of a game</li>
 <li><a href="http://mashable.com/2013/04/02/wireframing-tools-mobile/">Specific tools</a> exist for wireframing, but Photoshop/Illustrator/hand sketches work as well.</li>
-</ul
+</ul>
 
 <h2>Homework Assignment</h2>
 Wireframe your midterm project.
