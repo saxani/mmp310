@@ -132,9 +132,9 @@ Week 10 (November 14th): JavaScript APIs and JSON
 
 Week 11 (November 21st): Websockets
 
-Week 12 (November 28th): D3 and P5.js
+Week 12 (November 28th): three.js
 
-Week 13 (December 5th): D3 and P5.js
+Week 13 (December 5th): D3 
 
 Week 14 (December 12th): Review and final projects workshop
 
