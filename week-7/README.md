@@ -1,8 +1,8 @@
 
-<h1>Week 7 (October 24th): JavaScript Objects, Jquery</h1>
+<h1>Week 7 (October 24th): JavaScript Objects, jQuery</h1>
 <ul>
 <li><a href="http://shaunaxani.com/cuny/mmp310/week7/objects.html">Objects</a></li>
-<li><a href="http://shaunaxani.com/cuny/mmp310/week7/jquery.html">Jquery</a></li>
+<li><a href="http://shaunaxani.com/cuny/mmp310/week7/jquery.html">jQuery</a></li>
 
 </ul>
 
