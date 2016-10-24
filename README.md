@@ -123,7 +123,11 @@ Week 6 (October 17th): JavaScript time and the canvas
 <li><a href="https://github.com/saxani/mmp310/tree/master/week-6">Homework Assignment</a></li>
 </ul>
 Week 7 (October 24th): JavaScript Objects and JQuery
-
+<ul>
+<li><a href="http://shaunaxani.com/cuny/mmp310/week7/objects.html">Objects</a></li>
+<li><a href="http://shaunaxani.com/cuny/mmp310/week6/jquery.html">jQuery</a></li>
+<li><a href="https://github.com/saxani/mmp310/tree/master/week-7">Homework Assignment</a></li>
+</ul>
 Week 8 (October 31st): JQuery
 
 Week 9 (November 7th): Midterm Project Presentations, more JSON, APIs
