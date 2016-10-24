@@ -1,0 +1,57 @@
+<!doctype html>
+
+<html>
+
+<head>
+    
+</head>
+
+
+<body>
+   <h1>New user signup</h1> 
+    
+    <input id="name" type="text" placeholder="Input name" />
+    <input id="email" placeholder="Input email" />
+    <select id="country">
+	<option>United States</option>
+	<option>Canada<option>
+	<option>Mexico</option>
+	<option>Other</option>
+	<option>Nowhere</option>
+    </select>
+    <button id="submit">Submit</button>
+    
+    
+    
+    <script type="text/javascript">
+        var theUser;
+        
+        var submit = document.getElementById('submit');
+        submit.addEventListener('click', submitForm);
+        
+         function User (name, email, country) {
+            this.name = name;
+            this.email = email;
+            this.country = country;
+            alert(this.name);
+            
+            this.postMessage = function() {
+                //Some code
+            }
+        }
+        
+        function submitForm() {
+            var name = document.getElementById("name").value;
+            var email = document.getElementById("email").value;
+            var country = document.getElementById("country").value;
+            
+            
+            theUser = new User (name, email, country);
+            alert(theUser);
+            console.log(theUser.name, theUser.email, theUser.country);
+        };
+    
+    </script>
+</body>
+
+</html>
