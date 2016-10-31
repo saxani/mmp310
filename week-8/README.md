@@ -1,6 +1,6 @@
 <h1>Week 8 (October 31st): jQuery</h1>
 <ul>
-<li><a href="hhttps://docs.google.com/presentation/d/1xXS_MFVyNgwC5gPdDQSrh2ZOdc62hfXo-7uHhrk2AAI/edit#slide=id.p">jQuery</a></li>
+<li><a href="https://docs.google.com/presentation/d/1xXS_MFVyNgwC5gPdDQSrh2ZOdc62hfXo-7uHhrk2AAI/edit#slide=id.p">jQuery</a></li>
 <li>Class work on midterm</li>
 </ul>
 
