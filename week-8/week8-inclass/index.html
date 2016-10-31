@@ -1,0 +1,64 @@
+<!doctype html>
+
+<html>
+
+<head>
+
+    <title>My food app</title>
+    
+    <style type="text/css">
+    
+        li{
+            background-color: aqua;
+            border-color: black;
+            border-size: 2px;
+            border-style: dashed;
+        }
+    
+    </style>
+</head>
+
+ 
+<body>
+   
+    <h1>FOOD</h1>
+    
+    <ul>
+    <li><a href="#">Watermelon</a></li>
+        <li>Apple</li>
+        <li>Orange</li>
+        <li>Mango</li>
+        <li>Lemon</li>
+    </ul>
+    
+
+    
+    
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    
+<script type="text/javascript">
+    
+var myButton = document.getElementById('myButton');
+$(document).ready(function(){
+    $('li').on('mouseover', function(){
+		$(this).animate({
+			'opacity': '0.5',
+            'padding-left': '200'
+		}, 500, function() {
+			$(this).animate({
+			    'opacity': '0.0',
+                'padding-top': '200'
+		}, 500, function(){
+                $(this).remove();
+            });
+	});
+});
+});
+
+
+</script>
+
+</body>
+
+</html>
