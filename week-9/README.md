@@ -12,4 +12,9 @@ Get a Google Maps API key
 <li>Need to use a gmail address to enable it.</li>
 </ul>
 
+<h2>Midterm Projects</h2>
+<a href="http://mmp.bmcc.cuny.edu/david.rodriguez1/MMP310_Midterm/">David</a>
+<a href="http://mmp.bmcc.cuny.edu/cristian.rivera/mmp310/midterm">Cristian Rivera</a>
+
+
 
