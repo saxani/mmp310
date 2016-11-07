@@ -13,8 +13,12 @@ Get a Google Maps API key
 </ul>
 
 <h2>Midterm Projects</h2>
-<a href="http://mmp.bmcc.cuny.edu/david.rodriguez1/MMP310_Midterm/">David</a>
-<a href="http://mmp.bmcc.cuny.edu/cristian.rivera/mmp310/midterm">Cristian Rivera</a>
+<a href="http://mmp.bmcc.cuny.edu/david.rodriguez1/MMP310_Midterm/">David</a> <br/>
+<a href="http://mmp.bmcc.cuny.edu/cristian.rivera/mmp310/midterm">Cristian Rivera</a> <br/>
+<a href="http://shaunaxani.com/cuny/mmp310/midterms/jay/index.html">Jay</a> <br />
+<a href="http://shaunaxani.com/cuny/mmp310/midterms/eduardo/index.html">Eduardo</a> <br />
+
+
 
 
 
