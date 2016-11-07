@@ -1,0 +1,41 @@
+<!doctype html>
+<html>
+
+<body>
+    <!--Search input field-->
+    <input id="searchterm" type="text" />
+    <button id="search">search</button>
+    
+    <!--Results for search term-->
+    <div id="results"></div>
+</body>
+<!--Get jQuery library on Google-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+<script type="text/javascript">
+    
+    //When key is released while typing in searchterm, fire this function
+    $("#searchterm").keyup(function (e) {
+        //q is for the search query
+        var q = $("#searchterm").val();
+        //Get a JSON api url with the following parameters
+        $.getJSON("http://en.wikipedia.org/w/api.php?callback=?", {
+            srsearch: q
+            , action: "query"
+            , list: "search"
+            , format: "json"
+        //Callback function with the data from the API call
+        }, function (data) {
+            //Empty out the results div
+            $("#results").empty();
+            //Append query name
+            $("#results").append("Results for <b>" + q + "</b>");
+            
+            //Append each result in its own div with it's title, snippet and hyperlink
+            $.each(data.query.search, function (i, item) {
+                $("#results").append("<div><a href='http://en.wikipedia.org/wiki/" + encodeURIComponent(item.title) + "'>" + item.title + "</a>" + item.snippet + "</div>");
+            });
+        });
+    });
+</script>
+
+</html>
