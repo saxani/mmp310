@@ -12,6 +12,19 @@ Get a Google Maps API key
 <li>Need to use a gmail address to enable it.</li>
 </ul>
 
+<h2>Midterm Presentations</h2>
+<p>Speak for 5-minutes about your project.</p>
+<p>Talking points include:</p>
+<ul>  
+<li>Why this project?</li>
+<li>Give us an overview of the app</li>
+<li>What were you focusing on while making this app?</li>
+<li>Why do you think this site/game will be easy for users to navigate?</li>
+<li>What worked and what didn't?</li>
+<li>What would you want to do to the site going forward?</li>
+<li>Show us your code in Brackets</li>
+</ul>
+
 <h2>Midterm Projects</h2>
 <a href="http://mmp.bmcc.cuny.edu/david.rodriguez1/MMP310_Midterm/">David</a> <br/>
 <a href="http://mmp.bmcc.cuny.edu/cristian.rivera/mmp310/midterm">Cristian R</a> <br/>
