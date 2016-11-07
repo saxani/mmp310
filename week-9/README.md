@@ -17,6 +17,10 @@ Get a Google Maps API key
 <a href="http://mmp.bmcc.cuny.edu/cristian.rivera/mmp310/midterm">Cristian Rivera</a> <br/>
 <a href="http://shaunaxani.com/cuny/mmp310/midterms/jay/index.html">Jay</a> <br />
 <a href="http://shaunaxani.com/cuny/mmp310/midterms/eduardo/index.html">Eduardo</a> <br />
+<a href="https://miguelcord.github.io/midterm310/">Miguel</a> <br />
+<a href="http://mmp.bmcc.cuny.edu/vironika.lishtvan/spot-animal/index.html">Vironika</a> <br />
+<a href="http://shaunaxani.com/cuny/mmp310/midterms/weiye/index.html">Weiye</a> <br />
+
 
 
 
