@@ -21,6 +21,7 @@ Get a Google Maps API key
 <a href="http://mmp.bmcc.cuny.edu/vironika.lishtvan/spot-animal/index.html">Vironika</a> <br />
 <a href="http://shaunaxani.com/cuny/mmp310/midterms/weiye/index.html">Weiye</a> <br />
 <a href="http://shaunaxani.com/cuny/mmp310/midterms/jaron/index.html">Jaron</a> <br />
+<a href="http://shaunaxani.com/cuny/mmp310/midterms/channing/index.html">Channing</a> <br />
 
 
 
