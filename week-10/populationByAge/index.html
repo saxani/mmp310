@@ -1,0 +1,30 @@
+<html>
+
+<head></head>
+
+<body>
+    
+       Type an age:  <input id="searchterm" type="text" />
+    <div id="results"></div>
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+<script type="text/javascript">
+	 
+    //When key is released while typing in searchterm, fire this function
+    $("#searchterm").keyup(function (e) {
+        //q is for the search query
+        var q = $("#searchterm").val();
+        //Get a JSON api url with the following parameters
+        $.getJSON("pop.json", function (data) {
+            $("#results").empty();
+            $.each(data, function(key, val){
+                if (val.age == q){
+                    $("#results").append("There were " + val.total + " " + q + " year olds in America in 2010");
+                }
+            });
+        });
+    });       
+</script>
+
+
+</html>
