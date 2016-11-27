@@ -5,6 +5,8 @@
 <li><a href="http://shaunaxani.com/cuny/mmp310/week11/index.html">Setting up our sockets</a></li>
 </ul>
 
+<a href="https://docs.google.com/presentation/d/1HXzDk6xzBB9NAshpH-EYpRQ-SWvB-qbIDzreP_V1XcA/edit#slide=id.p">Here</a> is steps to either start a local server on your computer to see if your web sockets are working or to upload the files to the cailabs.org website into your server folder. 
+
 <h2>Homework Assignment</h2>
 Add on to either of the in class examples (or image/gif chat)
 <ul>
