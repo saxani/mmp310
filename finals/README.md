@@ -18,7 +18,7 @@ The final project must be a project utilizing JavaScript. It can be one of the f
 <li>How can basic 3D graphics be used to make an interaction new and fresh?</li>
 <li>Doesn't have to all be 3D, but should major elements.</li>
 <li>Can it be an original experience instead of remake of someting else?</li>
-<li>Examples <a href="http://fridek.github.io/Threejs-Tetris/">here</a></li>
+<li>Examples <a href="http://fridek.github.io/Threejs-Tetris/">here</a>, <a href="http://itpblog.evejweinberg.com/2016/03/29/a-n-x-i-e-t-y/">here</a></li>
 </ul>
 <li>Make an interactive game that can be played by multiple people</li>
 <ul>
