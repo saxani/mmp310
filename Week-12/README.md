@@ -1,6 +1,7 @@
 <h1>Week 12 (November 28th): Three.js - 3D Graphics in JavaScript</h1>
 
 Three.js day with <a href="http://mindofmatthew.com/">Matthew Kaney</a>
+Matt's notes are <a href="https://github.com/mindofmatthew/intro-to-three.js">here</a>
 
 Three.js documentation can be found <a href="https://threejs.org/">here</a>
 
