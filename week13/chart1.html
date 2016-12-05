@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+
+
+<html>
+    <head>
+        <title>My Chart</title>
+        <style>
+            #chart {
+                width:300px;
+                height:200px;
+                border:1px solid lightgray;
+                color:white;
+            }
+        </style>
+    </head>
+    
+    <body>
+        <div id="chart"></div>
+        <div id="newChart"></div>
+         <script src="https://d3js.org/d3.v4.min.js"></script>
+         <script>
+            var data = [];
+            d3.tsv('myData.tsv', function(theData){
+                for (key in theData){
+                    data.push(theData[key].value)
+                    console.log(data[key]);
+                }
+            
+            var colors = ["lightblue", "blue", "lightgreen", "green"];
+            d3.select("#chart")
+                .selectAll("div")
+                .data(data)
+                .enter().append("div")
+                .on('mouseover', function(d){
+                    d3.select(this)
+                        .style('opacity', .5)
+                })
+                .on('mouseout', function(d){
+                    d3.select(this)
+                        .style('opacity', 1)
+                })
+                .style("background", function(d, i) { return colors[i%4]; })
+                .text(function(d) { return d; })
+                .transition()
+                .duration(2000)
+                .style('width', function(d) { return d + 'px'; })
+                
+                ;
+             
+             var svg = d3.select('#newChart').append('svg')
+                .attr('width', 400)
+                .attr('height', 400);
+             
+             d3.select("svg").selectAll("circle")
+	           .data(data)
+	           .enter().append("circle")
+
+                .attr("cy", 100)
+
+                .attr("cx", 0)
+                .attr("r", 0)
+                .style("fill", "#ff0000")
+                .transition()
+                .duration(2000)
+                .attr("cx", function(d) { return d; })
+                .attr("r", function(d) { return d/10; })
+                ;
+            });
+        </script>
+    </body>
+</html>
